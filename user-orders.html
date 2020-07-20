@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="grey lighten-3">
+
+  <!-- Start your project here-->  
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+      <div class="container-fluid">
+        
+        <a href="#" class="navbar-brand waves-effect"><strong class="blue-text">Routek</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Уведомления</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Routek Support</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Полезные ресурсы</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item dropdown show">
+              <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                RU
+              </a>
+              <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item active" href="index.html">RU</a>
+                <a class="dropdown-item" href="#">EN</a>
+                <a class="dropdown-item" href="#">DE</a>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="nav-link">Выйти</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start sidebar -->
+    <div class="sidebar-fixed position-fixed">
+      <div class="text-center">
+        <a href="#" class="logo-wrapper waves-effect">
+          <img src="img/lc-user.jpg" width="48"  height="48" alt="Logo" class="img-fluid">
+        </a>
+      </div>
+
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item waves-effect"><i class="fas fa-chart-pie mr-3"></i>Dashboard</a>
+        <a href="profile.html" class="list-group-item  waves-effect"><i class="fas fa-user mr-3"></i>Profile</a>
+        <a href="onboard.html" class="list-group-item waves-effect"><i class="fas fa-rocket mr-3"></i></i>Onboarding</a>
+        <!-- <a href="#" class="list-group-item waves-effect"><i class="fas fa-table mr-3"></i>Tables</a>
+        <a href="#" class="list-group-item waves-effect"><i class="fas fa-map mr-3"></i>Maps</a> -->
+        <a href="#" class="list-group-item active waves-effect"><i class="fas fa-money-bill-alt mr-3"></i>Orders</a>
+        <a href="user-files.html" class="list-group-item waves-effect"><i class="fas fa-file-alt mr-4"></i></i>Files</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Start main page -->
+  <main class="pt-5 mx-lg-5">
+  
+    <!-- Search card -->
+    <div class="container-fluid mt-5">
+      <div class="card mb-4 wow fadeIn">
+        <div class="card-body d-sm-flex justify-content-between">
+          <h4 class="mb-2 mb-sm-0 pt-1">
+            <span>Orders</span>
+          </h4>
+          <form class="d-flex justify-content-center">
+            <input type="search" class="form-control" placeholder="Введите запрос"></input>
+            <button class="btn btn-primary btn-sm my-0 p" type="submit">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+  
+      <!-- Start row 1 -->
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <a href="" class="p-0 float-right mb-3">Export <i class="mdi mdi-download ml-1"></i></a>
+              <h4 class="header-title mt-1">Channels</h4>
+  
+              <div class="table-responsive">
+                <table class="table table-sm table-centered mb-0 font-14">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Channel</th>
+                      <th>Visits</th>
+                      <th style="width: 40%;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Direct</td>
+                      <td>2,050</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 65%; height: 20px;"
+                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Organic Search</td>
+                      <td>1,405</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 45%; height: 20px;"
+                            aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Refferal</td>
+                      <td>750</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 30%; height: 20px;"
+                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Social</td>
+                      <td>540</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 25%; height: 20px;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> <!-- end table-responsive-->
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col-->
+  
+        <div class="col-xl-4 col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <a href="" class="p-0 float-right mb-3">Export <i class="mdi mdi-download ml-1"></i></a>
+              <h4 class="header-title mt-1">Social Media Traffic</h4>
+  
+              <div class="table-responsive">
+                <table class="table table-sm table-centered mb-0 font-14">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Network</th>
+                      <th>Visits</th>
+                      <th style="width: 40%;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Facebook</td>
+                      <td>2,250</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 65%; height: 20px;"
+                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Instagram</td>
+                      <td>1,501</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 45%; height: 20px;"
+                            aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Twitter</td>
+                      <td>750</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 30%; height: 20px;"
+                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>LinkedIn</td>
+                      <td>540</td>
+                      <td>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 25%; height: 20px;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> <!-- end table-responsive-->
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col-->
+  
+        <div class="col-xl-4 col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <a href="" class="p-0 float-right mb-3">Export <i class="mdi mdi-download ml-1"></i></a>
+              <h4 class="header-title mt-1">Engagement Overview</h4>
+  
+              <div class="table-responsive">
+                <table class="table table-sm table-centered mb-0 font-14">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Duration (Secs)</th>
+                      <th style="width: 30%;">Sessions</th>
+                      <th style="width: 30%;">Views</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0-30</td>
+                      <td>2,250</td>
+                      <td>4,250</td>
+                    </tr>
+                    <tr>
+                      <td>31-60</td>
+                      <td>1,501</td>
+                      <td>2,050</td>
+                    </tr>
+                    <tr>
+                      <td>61-120</td>
+                      <td>750</td>
+                      <td>1,600</td>
+                    </tr>
+                    <tr>
+                      <td>121-240</td>
+                      <td>540</td>
+                      <td>1,040</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> <!-- end table-responsive-->
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col-->
+  
+      </div>
+      <!-- End row 1 -->
+  
+  
+      <!-- Start row 2 -->
+      <div class="row wow fadeIn">
+        <!-- Start Col-md-6-1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <table class="table table-hover">
+                <thead class="blue-grey lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Ipsum</th>
+                    <th>lorem</th>
+                    <th>Dolor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Start Col-md-6-2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <table class="table table-hover">
+                <thead class="blue lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Ipsum</th>
+                    <th>lorem</th>
+                    <th>Dolor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th><button class="btn btn-primary btn-sm my-0">Заказ</button></th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End row 2 -->
+  
+  
+      <!-- Start row 3 -->
+      <div class="row">
+  
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Login</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </div>
+  
+      </div>
+  
+  
+  
+    </div>
+  </main>
+  
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <script>
+    new WOW().init();
+    
+  </script>
+  
+
+</body>
+</html>

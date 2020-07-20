@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="grey lighten-3">
+
+  <!-- Start your project here-->  
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar py-0">
+      <div class="container-fluid">
+        <a class="navbar-brand py-0" href="#">
+          <img class="image-fluid" src="img/routek-logo-white.svg" width="191" height="71" alt="Компания Routek" loading="lazy">
+        </a>
+        <!-- <a href="#" class="navbar-brand waves-effect"><strong class="blue-text">Routek</strong></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Уведомления</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Routek Support</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Полезные ресурсы</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item dropdown show">
+              <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                RU
+              </a>
+              <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item active" href="index.html">RU</a>
+                <a class="dropdown-item" href="#">EN</a>
+                <a class="dropdown-item" href="#">DE</a>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="nav-link">Выйти</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar-fixed position-fixed">
+      <div class="text-center">
+        <a href="#" class="logo-wrapper waves-effect">
+          <img src="img/lc-user.jpg" width="48"  height="48" alt="Logo" class="img-fluid">
+        </a>
+      </div>
+
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item active  waves-effect"><i class="fas fa-chart-pie mr-3"></i>Dashboard</a>
+        <a href="profile.html" class="list-group-item waves-effect"><i class="fas fa-user mr-3"></i>Profile</a>
+        <a href="onboard.html" class="list-group-item waves-effect"><i class="fas fa-rocket mr-3"></i></i>Onboarding</a>
+        <!-- <a href="#" class="list-group-item waves-effect"><i class="fas fa-table mr-3"></i>Tables</a>
+        <a href="#" class="list-group-item waves-effect"><i class="fas fa-map mr-3"></i>Maps</a> -->
+        <a href="user-orders.html" class="list-group-item waves-effect"><i class="fas fa-money-bill-alt mr-3"></i>Orders</a>
+        <a href="user-files.html" class="list-group-item waves-effect"><i class="fas fa-file-alt mr-4"></i></i>Files</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Start main page -->
+  <main class="pt-5 mx-lg-5">
+  
+    <!-- Search card -->
+    <div class="container-fluid mt-5">
+      <div class="card mb-4 wow fadeIn">
+        <div class="card-body d-sm-flex justify-content-between">
+          <h4 class="mb-2 mb-sm-0 pt-1">
+            <a href="#">Home page</a>
+            <span>/</span>
+            <span>Dashboard</span>
+          </h4>
+          <form class="d-flex justify-content-center">
+            <input type="search" class="form-control" placeholder="Введите запрос"></input>
+            <button class="btn btn-primary btn-sm my-0 p" type="submit">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+  
+      <!-- Start row 1 -->
+      <div class="row wow fadeIn">
+        <!-- Start Col-md-9 -->
+        <div class="col-md-9 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Start Col-md-3 -->
+        <div class="col-md-3 mb-4">
+          <!-- Start pieChart -->
+          <div class="card mb-4">
+            <div class="card-header">Pie-chart</div>
+            <div class="card-body">
+              <canvas id="pieChart"></canvas>
+            </div>
+          </div>
+          <!-- End pieChart -->
+  
+          <!-- Start Card -->
+          <div class="card mb-4">
+            <!--Card content-->
+            <div class="card-body">
+    
+              <!-- List group links -->
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action waves-effect">Sales
+                  <span class="badge badge-success badge-pill float-right">22%
+                    <i class="fa fa-arrow-up ml-1"></i>
+                  </span>
+                </a>
+                <a class="list-group-item list-group-item-action waves-effect">Traffic
+                  <span class="badge badge-danger badge-pill float-right">5%
+                    <i class="fa fa-arrow-down ml-1"></i>
+                  </span>
+                </a>
+                <a class="list-group-item list-group-item-action waves-effect">Orders
+                  <span class="badge badge-primary badge-pill float-right">14</span>
+                </a>
+                <a class="list-group-item list-group-item-action waves-effect">Issues
+                  <span class="badge badge-primary badge-pill float-right">123</span>
+                </a>
+                <a class="list-group-item list-group-item-action waves-effect">Messages
+                  <span class="badge badge-primary badge-pill float-right">8</span>
+                </a>
+              </div>
+              <!-- List group links -->
+
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>
+      <!-- End row 1 -->
+  
+  
+      <!-- Start row 2 -->
+      <div class="row wow fadeIn">
+        <!-- Start Col-md-6-1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <table class="table table-hover">
+                <thead class="blue-grey lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Ipsum</th>
+                    <th>lorem</th>
+                    <th>Dolor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Start Col-md-6-2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <table class="table table-hover">
+                <thead class="blue lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Ipsum</th>
+                    <th>lorem</th>
+                    <th>Dolor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th>Item 4</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                    <th><button class="btn btn-primary btn-sm my-0">Заказ</button></th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End row 2 -->
+
+      <!-- Start row 3 -->
+
+      <div class="row wow fadeIn">
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="card-header">Line Chart</div>
+            <div class="card-body">
+              <canvas id="lineChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">Radar Chart</div>
+            <div class="card-body">
+              <canvas id="radarChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">Doughnut Chart</div>
+            <div class="card-body">
+              <canvas id="doughnutChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  
+    </div>
+  </main>
+  
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/modules/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+
+
+    //pie
+    var ctxP = document.getElementById("pieChart").getContext('2d');
+        var myPieChart = new Chart(ctxP, {
+            type: 'pie',
+            data: {
+                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                datasets: [{
+                    data: [300, 50, 100, 40, 120],
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: false
+            }
+        });
+
+        //line
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+            type: 'line',
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: [
+                            'rgba(105, 0, 132, .2)',
+                        ],
+                        borderColor: [
+                            'rgba(200, 99, 132, .7)',
+                        ],
+                        borderWidth: 2,
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    },
+                    {
+                        label: "My Second dataset",
+                        backgroundColor: [
+                            'rgba(0, 137, 132, .2)',
+                        ],
+                        borderColor: [
+                            'rgba(0, 10, 130, .7)',
+                        ],
+                        data: [28, 48, 40, 19, 86, 27, 90]
+                    }
+                ]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        //radar
+        var ctxR = document.getElementById("radarChart").getContext('2d');
+        var myRadarChart = new Chart(ctxR, {
+            type: 'radar',
+            data: {
+                labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+                datasets: [{
+                    label: "My First dataset",
+                    data: [65, 59, 90, 81, 56, 55, 40],
+                    backgroundColor: [
+                        'rgba(105, 0, 132, .2)',
+                    ],
+                    borderColor: [
+                        'rgba(200, 99, 132, .7)',
+                    ],
+                    borderWidth: 2
+                }, {
+                    label: "My Second dataset",
+                    data: [28, 48, 40, 19, 96, 27, 100],
+                    backgroundColor: [
+                        'rgba(0, 250, 220, .2)',
+                    ],
+                    borderColor: [
+                        'rgba(0, 213, 132, .7)',
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        //doughnut
+        var ctxD = document.getElementById("doughnutChart").getContext('2d');
+        var myLineChart = new Chart(ctxD, {
+            type: 'doughnut',
+            data: {
+                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                datasets: [{
+                    data: [300, 50, 100, 40, 120],
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

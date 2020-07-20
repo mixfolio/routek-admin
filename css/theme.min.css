@@ -1,0 +1,51 @@
+.btn-falcon-default, .falcon-data-table .paging_first_last_numbers .page-link, .falcon-data-table .paging_full .page-link, .falcon-data-table .paging_full_numbers .page-link, .falcon-data-table .paging_numbers .page-link, .falcon-data-table .paging_simple_numbers .page-link {
+   color: #4d5969;
+   background-color: #fff;
+   border-color: #fff;
+   -webkit-box-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
+   box-shadow:0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08)
+}
+
+.btn-falcon-default:hover, .falcon-data-table .paging_first_last_numbers .page-link:hover, .falcon-data-table .paging_full .page-link:hover, .falcon-data-table .paging_full_numbers .page-link:hover, .falcon-data-table .paging_numbers .page-link:hover, .falcon-data-table .paging_simple_numbers .page-link:hover {
+   color: #4d5969;
+   background-color: #fff;
+   border-color:#fff
+}
+
+.btn-falcon-default.focus, .btn-falcon-default:focus, .falcon-data-table .paging_first_last_numbers .focus.page-link, .falcon-data-table .paging_first_last_numbers .page-link:focus, .falcon-data-table .paging_full .focus.page-link, .falcon-data-table .paging_full .page-link:focus, .falcon-data-table .paging_full_numbers .focus.page-link, .falcon-data-table .paging_full_numbers .page-link:focus, .falcon-data-table .paging_numbers .focus.page-link, .falcon-data-table .paging_numbers .page-link:focus, .falcon-data-table .paging_simple_numbers .focus.page-link, .falcon-data-table .paging_simple_numbers .page-link:focus {
+   color: #4d5969;
+   background-color: #fff;
+   border-color: #fff;
+   -webkit-box-shadow: 0 0 0 0 rgba(228, 230, 233, .5);
+   box-shadow:0 0 0 0 rgba(228, 230, 233, .5)
+}
+
+.btn-falcon-default.disabled, .btn-falcon-default:disabled, .falcon-data-table .paging_first_last_numbers .disabled.page-link, .falcon-data-table .paging_first_last_numbers .page-link:disabled, .falcon-data-table .paging_full .disabled.page-link, .falcon-data-table .paging_full .page-link:disabled, .falcon-data-table .paging_full_numbers .disabled.page-link, .falcon-data-table .paging_full_numbers .page-link:disabled, .falcon-data-table .paging_numbers .disabled.page-link, .falcon-data-table .paging_numbers .page-link:disabled, .falcon-data-table .paging_simple_numbers .disabled.page-link, .falcon-data-table .paging_simple_numbers .page-link:disabled {
+   color: #4d5969;
+   background-color: #fff;
+   border-color:#fff
+}
+
+.btn-falcon-default:not(:disabled):not(.disabled).active, .btn-falcon-default:not(:disabled):not(.disabled):active, .falcon-data-table .paging_first_last_numbers .page-link:not(:disabled):not(.disabled).active, .falcon-data-table .paging_first_last_numbers .page-link:not(:disabled):not(.disabled):active, .falcon-data-table .paging_first_last_numbers .show > .dropdown-toggle.page-link, .falcon-data-table .paging_full .page-link:not(:disabled):not(.disabled).active, .falcon-data-table .paging_full .page-link:not(:disabled):not(.disabled):active, .falcon-data-table .paging_full .show > .dropdown-toggle.page-link, .falcon-data-table .paging_full_numbers .page-link:not(:disabled):not(.disabled).active, .falcon-data-table .paging_full_numbers .page-link:not(:disabled):not(.disabled):active, .falcon-data-table .paging_full_numbers .show > .dropdown-toggle.page-link, .falcon-data-table .paging_numbers .page-link:not(:disabled):not(.disabled).active, .falcon-data-table .paging_numbers .page-link:not(:disabled):not(.disabled):active, .falcon-data-table .paging_numbers .show > .dropdown-toggle.page-link, .falcon-data-table .paging_simple_numbers .page-link:not(:disabled):not(.disabled).active, .falcon-data-table .paging_simple_numbers .page-link:not(:disabled):not(.disabled):active, .falcon-data-table .paging_simple_numbers .show > .dropdown-toggle.page-link, .show > .btn-falcon-default.dropdown-toggle {
+   color: #4d5969;
+   background-color: #e6e6e6;
+   border-color:#dfdfdf
+}
+
+.btn-falcon-default:not(:disabled):not(.disabled).active:focus, .btn-falcon-default:not(:disabled):not(.disabled):active:focus, .falcon-data-table .paging_first_last_numbers .page-link:not(:disabled):not(.disabled).active:focus, .falcon-data-table .paging_first_last_numbers .page-link:not(:disabled):not(.disabled):active:focus, .falcon-data-table .paging_first_last_numbers .show > .dropdown-toggle.page-link:focus, .falcon-data-table .paging_full .page-link:not(:disabled):not(.disabled).active:focus, .falcon-data-table .paging_full .page-link:not(:disabled):not(.disabled):active:focus, .falcon-data-table .paging_full .show > .dropdown-toggle.page-link:focus, .falcon-data-table .paging_full_numbers .page-link:not(:disabled):not(.disabled).active:focus, .falcon-data-table .paging_full_numbers .page-link:not(:disabled):not(.disabled):active:focus, .falcon-data-table .paging_full_numbers .show > .dropdown-toggle.page-link:focus, .falcon-data-table .paging_numbers .page-link:not(:disabled):not(.disabled).active:focus, .falcon-data-table .paging_numbers .page-link:not(:disabled):not(.disabled):active:focus, .falcon-data-table .paging_numbers .show > .dropdown-toggle.page-link:focus, .falcon-data-table .paging_simple_numbers .page-link:not(:disabled):not(.disabled).active:focus, .falcon-data-table .paging_simple_numbers .page-link:not(:disabled):not(.disabled):active:focus, .falcon-data-table .paging_simple_numbers .show > .dropdown-toggle.page-link:focus, .show > .btn-falcon-default.dropdown-toggle:focus {
+   -webkit-box-shadow: 0 0 0 0 rgba(228, 230, 233, .5);
+   box-shadow:0 0 0 0 rgba(228, 230, 233, .5)
+}
+
+.btn-falcon-default:focus:not(.disabled):not(:disabled), .btn-falcon-default:hover:not(.disabled):not(:disabled), .falcon-data-table .paging_first_last_numbers .page-link:focus:not(.disabled):not(:disabled), .falcon-data-table .paging_first_last_numbers .page-link:hover:not(.disabled):not(:disabled), .falcon-data-table .paging_full .page-link:focus:not(.disabled):not(:disabled), .falcon-data-table .paging_full .page-link:hover:not(.disabled):not(:disabled), .falcon-data-table .paging_full_numbers .page-link:focus:not(.disabled):not(:disabled), .falcon-data-table .paging_full_numbers .page-link:hover:not(.disabled):not(:disabled), .falcon-data-table .paging_numbers .page-link:focus:not(.disabled):not(:disabled), .falcon-data-table .paging_numbers .page-link:hover:not(.disabled):not(:disabled), .falcon-data-table .paging_simple_numbers .page-link:focus:not(.disabled):not(:disabled), .falcon-data-table .paging_simple_numbers .page-link:hover:not(.disabled):not(:disabled) {
+   color: #010305 !important;
+   -webkit-box-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .1), 0 3px 9px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .08);
+   box-shadow:0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .1), 0 3px 9px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .08)
+}
+
+.btn-falcon-default:active, .falcon-data-table .paging_first_last_numbers .page-link:active, .falcon-data-table .paging_full .page-link:active, .falcon-data-table .paging_full_numbers .page-link:active, .falcon-data-table .paging_numbers .page-link:active, .falcon-data-table .paging_simple_numbers .page-link:active {
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   color:#010305 !important
+}
+

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="grey lighten-3">
+
+  <!-- Start your project here-->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+      <div class="container-fluid">
+
+        <a href="#" class="navbar-brand waves-effect"><strong class="blue-text">Routek</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Уведомления</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Routek Support</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Полезные ресурсы</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item dropdown show">
+              <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                RU
+              </a>
+              <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item active" href="index.html">RU</a>
+                <a class="dropdown-item" href="#">EN</a>
+                <a class="dropdown-item" href="#">DE</a>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="nav-link">Выйти</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start sidebar -->
+    <div class="sidebar-fixed position-fixed">
+      <div class="text-center">
+        <a href="#" class="logo-wrapper waves-effect">
+          <img src="img/lc-user.jpg" width="48" height="48" alt="Logo" class="img-fluid">
+        </a>
+      </div>
+
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item waves-effect"><i class="fas fa-chart-pie mr-3"></i>Dashboard</a>
+        <a href="#" class="list-group-item active waves-effect"><i class="fas fa-user mr-3"></i>Profile</a>
+        <a href="onboard.html" class="list-group-item waves-effect"><i class="fas fa-rocket mr-3"></i></i>Onboarding</a>
+        <!-- <a href="#" class="list-group-item waves-effect"><i class="fas fa-table mr-3"></i>Tables</a>
+        <a href="#" class="list-group-item waves-effect"><i class="fas fa-map mr-3"></i>Maps</a> -->
+        <a href="user-orders.html" class="list-group-item waves-effect"><i
+            class="fas fa-money-bill-alt mr-3"></i>Orders</a>
+        <a href="user-files.html" class="list-group-item waves-effect"><i class="fas fa-file-alt mr-4"></i></i>Files</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Start main page -->
+  <main class="pt-5 mx-lg-5">
+
+    <!-- Search card -->
+    <div class="container-fluid mt-5">
+      <div class="card mb-4 card-user-wall">
+        <img class="position-relative" src="img/user-wallpaper-lc.jpg" class="card-img-top" alt="User">
+        <div class="card-body">
+          <img class="rounded-circle img-thumbnail shadow-sm user-avatar" width="168" height="168" src="img/lc-user.jpg" alt="">
+          <h4 class="card-title" style="margin-left: 200px;">В. Ю. Алекперов</h4>
+        </div>
+      </div>
+
+      <!-- Pills navs -->
+      <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="ex1-tab-1" data-toggle="pill" href="#ex1-pills-1" role="tab"
+            aria-controls="ex1-pills-1" aria-selected="true">Общая информация</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex1-tab-2" data-toggle="pill" href="#ex1-pills-2" role="tab"
+            aria-controls="ex1-pills-2" aria-selected="false">Адрес</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex1-tab-3" data-toggle="pill" href="#ex1-pills-3" role="tab"
+            aria-controls="ex1-pills-3" aria-selected="false">Реквизиты</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex1-tab-4" data-toggle="pill" href="#ex1-pills-4" role="tab"
+            aria-controls="ex1-pills-4" aria-selected="false">Учетная запись</a>
+        </li>
+      </ul>
+      <!-- Pills navs -->
+
+      <!--Start Pills content -->
+      <div class="tab-content" id="ex1-content">
+
+        <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputName">ФИО</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="ФИО">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="formSelect">Форма</label>
+                    <select id="formSelect" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>ИП</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Ваш E-mail">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputPhone">Телефон</label>
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="8(495) 123-45-67">
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAbout">О себе</label>
+                  <input type="text" class="form-control" id="inputAbout" placeholder="Описание">
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Адресная информация</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputIndex">Индекс</label>
+                    <input type="text" class="form-control" id="inputIndex" placeholder="Индекс">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputStreet">Улица</label>
+                    <input type="text" class="form-control" id="inputStreet" placeholder="Улица">
+                  </div>
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputRegion">Регион/Область</label>
+                    <input type="text" class="form-control" id="inputRegion" placeholder="Регион/Область">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputHouse">Дом</label>
+                    <input type="text" class="form-control" id="inputHouse" placeholder="Дом">
+                  </div>
+
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Город</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Город">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputOffice">Офис</label>
+                    <input type="text" class="form-control" id="inputOffice" placeholder="Офис">
+                  </div>
+
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Реквизиты</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputINN">ИНН</label>
+                    <input type="text" class="form-control" id="inputINN" placeholder="ИНН">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputBill">Счет</label>
+                    <input type="text" class="form-control" id="inputBill" placeholder="Счет">
+                  </div>
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputKPP">КПП</label>
+                    <input type="text" class="form-control" id="inputKPP" placeholder="КПП">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputKorBill">Кор. счет</label>
+                    <input type="text" class="form-control" id="inputKorBill" placeholder="Кор. счет">
+                  </div>
+
+                </div>
+
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputBIK">БИК</label>
+                    <input type="text" class="form-control" id="inputBIK" placeholder="БИК">
+                  </div>
+
+                </div>
+
+
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Сменить пароль</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword">Пароль</label>
+                    <input type="text" class="form-control" id="inputPassword" placeholder="Пароль">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword2">Подтверждение</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Подтверждение">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--End Pills content -->
+
+    </div>
+
+
+
+  </main>
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+
+</body>
+
+</html>
