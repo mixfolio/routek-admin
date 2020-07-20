@@ -86,7 +86,7 @@
       <div class="card mb-4 wow fadeIn">
         <div class="card-body d-sm-flex justify-content-between">
           <h4 class="mb-2 mb-sm-0 pt-1">
-            <a href="#">Home page</a>
+            <a href="#">Главная</a>
             <span>/</span>
             <span>Dashboard</span>
           </h4>
@@ -98,7 +98,40 @@
           </form>
         </div>
       </div>
-  
+      
+
+      <!-- Start row 3 -->
+
+      <div class="row wow fadeIn">
+
+        <div class="col-md-12 mb-4">
+          <div class="card">
+            <div class="card-header">Line Chart</div>
+            <div class="card-body">
+              <canvas id="lineChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">Radar Chart</div>
+            <div class="card-body">
+              <canvas id="radarChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">Doughnut Chart</div>
+            <div class="card-body">
+              <canvas id="doughnutChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
   
       <!-- Start row 1 -->
       <div class="row wow fadeIn">
@@ -239,38 +272,7 @@
       </div>
       <!-- End row 2 -->
 
-      <!-- Start row 3 -->
-
-      <div class="row wow fadeIn">
-
-        <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card">
-            <div class="card-header">Line Chart</div>
-            <div class="card-body">
-              <canvas id="lineChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="card-header">Radar Chart</div>
-            <div class="card-body">
-              <canvas id="radarChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="card-header">Doughnut Chart</div>
-            <div class="card-body">
-              <canvas id="doughnutChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      
 
   
     </div>
@@ -355,26 +357,27 @@
         var myLineChart = new Chart(ctxL, {
             type: 'line',
             data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль"],
                 datasets: [{
-                        label: "My First dataset",
+                        label: "Расходы",
                         backgroundColor: [
-                            'rgba(105, 0, 132, .2)',
+                            'rgba(40, 128, 235, .4)',
                         ],
                         borderColor: [
-                            'rgba(200, 99, 132, .7)',
+                            'rgba(40, 128, 235, 1)',
                         ],
                         borderWidth: 2,
                         data: [65, 59, 80, 81, 56, 55, 40]
                     },
                     {
-                        label: "My Second dataset",
+                        label: "Доходы",
                         backgroundColor: [
-                            'rgba(0, 137, 132, .2)',
+                            'rgba(0, 210, 160, .4)',
                         ],
                         borderColor: [
-                            'rgba(0, 10, 130, .7)',
+                            'rgba(0, 210, 160, 1)',
                         ],
+                        borderWidth: 2,
                         data: [28, 48, 40, 19, 86, 27, 90]
                     }
                 ]
@@ -422,7 +425,7 @@
         var myLineChart = new Chart(ctxD, {
             type: 'doughnut',
             data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                labels: ["DED", "MJ", "PBF", "BJ", "ME"],
                 datasets: [{
                     data: [300, 50, 100, 40, 120],
                     backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
